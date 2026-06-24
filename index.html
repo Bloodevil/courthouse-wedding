@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>우리의 결혼식에 초대합니다 | OUR WEDDING 06.17.2026</title>
+  <meta name="description" content="2026년 6월 17일, 저희 두 사람이 하나가 되는 날에 초대합니다." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=4" />
+</head>
+<body>
+  <!-- Language Toggle -->
+  <div class="lang-toggle-wrapper">
+    <button class="lang-btn active" id="btnKo" onclick="setLang('ko')">KOR</button>
+    <span class="lang-divider">|</span>
+    <button class="lang-btn" id="btnEn" onclick="setLang('en')">ENG</button>
+  </div>
+
+  <!-- Main Card -->
+  <div class="card" id="mainCard">
+    <!-- Section 1: Hero -->
+    <section class="section-hero">
+      <!-- Main Wedding Illustration -->
+      <div class="hero-main-img-wrap">
+        <img src="wedding-main.jpg" alt="Our Wedding Illustration" class="hero-main-img" />
+        <div class="hero-img-overlay">
+          <div class="hero-overlay-bottom">
+            <p class="hero-label">Wedding Invitation</p>
+            <div class="hero-names-kr">
+              <span class="lang-ko">김종민</span><span class="lang-en">Jongmin</span>
+              <span class="heart-divider">♡</span>
+              <span class="lang-ko">신예지</span><span class="lang-en">Yeaji</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-date-box">
+          <p class="hero-date-en">Wednesday, June 17, 2026</p>
+          <p class="hero-date-kr lang-ko">2026년 6월 17일 수요일</p>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <div class="scroll-line"></div>
+        <p>scroll</p>
+      </div>
+    </section>
+
+    <!-- Section 2: Invitation Text -->
+    <section class="section-invite">
+      <div class="divider-ornament">
+        <span>✦</span>
+        <div class="ornament-line"></div>
+        <span>✦</span>
+      </div>
+      <p class="invite-text lang-ko">
+        저희 두 사람, 태평양 건너 미국에서<br />
+        조용히 부부의 연을 맺었습니다.
+      </p>
+      <p class="invite-text lang-en">
+        We tied the knot quietly<br />
+        across the Pacific in the US.
+      </p>
+      
+      <p class="invite-text secondary lang-ko">
+        한국에서도 소중한 분들과<br />
+        그 기쁨을 함께 나눌 날을 준비하고 있으니<br />
+        미리 따뜻한 축하를 전해주시면 감사하겠습니다. 💕
+      </p>
+      <p class="invite-text secondary lang-en">
+        We are also preparing a day<br />
+        to share our joy with loved ones in Korea.<br />
+        Thank you for your warm wishes in advance. 💕
+      </p>
+      
+      <div class="family-info">
+        <div class="family-group">
+          <div class="family-row">
+            <span class="family-role lang-ko">신랑 측</span><span class="family-role lang-en">Groom</span>
+            <span class="family-names lang-ko">김태호 · 박미영의 장남</span><span class="family-names lang-en">Son of Taeho Kim & Miyoung Park</span>
+            <span class="family-name-main lang-ko">김종민</span><span class="family-name-main lang-en">Jongmin Kim</span>
+          </div>
+        </div>
+        <div class="family-divider">—</div>
+        <div class="family-group">
+          <div class="family-row">
+            <span class="family-role lang-ko">신부 측</span><span class="family-role lang-en">Bride</span>
+            <span class="family-names lang-ko">신영문 · 김경희의 장녀</span><span class="family-names lang-en">Daughter of Youngmoon Shin & Kyunghee Kim</span>
+            <span class="family-name-main lang-ko">신예지</span><span class="family-name-main lang-en">Yeaji Shin</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-btns">
+        <button class="contact-btn groom" onclick="tel('010-1234-5678')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 7.8 19.79 19.79 0 01.15 3.23 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.28A16 16 0 0015.72 17l1.54-1.54a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0124 17l-.08-.08z"/>
+          </svg>
+          <span class="lang-ko">신랑에게 연락</span><span class="lang-en">Contact Groom</span>
+        </button>
+        <button class="contact-btn bride" onclick="window.open('https://open.kakao.com/o/s03fPYAi', '_blank')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3C7.03 3 3 6.34 3 10.46c0 2.61 1.7 4.91 4.3 6.28L6.2 20.03c-.1.28.22.5.47.33l4.17-2.78c.37.04.75.06 1.13.06 5 0 9-3.34 9-7.18C21 6.34 17 3 12 3z"/>
+          </svg>
+          <span class="lang-ko">신부에게 연락</span><span class="lang-en">Contact Bride</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Section 3: Photo Gallery -->
+    <section class="section-gallery">
+      <div class="section-header">
+        <p class="section-label-en">Our Story</p>
+        <h2 class="section-title-kr lang-ko">우리의 이야기</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="gallery-grid-new">
+        <div class="gallery-item" onclick="openLightbox(0)">
+          <img src="gallery-1.jpg" alt="Gallery Image 1" class="gallery-photo-thumb" />
+        </div>
+        <div class="gallery-item" onclick="openLightbox(1)">
+          <img src="gallery-2.jpg" alt="Gallery Image 2" class="gallery-photo-thumb" />
+        </div>
+        <div class="gallery-item" onclick="openLightbox(2)">
+          <img src="gallery-3.jpg" alt="Gallery Image 3" class="gallery-photo-thumb" />
+        </div>
+        <div class="gallery-item" onclick="openLightbox(3)">
+          <img src="gallery-4.jpg" alt="Gallery Image 4" class="gallery-photo-thumb" />
+        </div>
+        <div class="gallery-item" onclick="openLightbox(4)">
+          <img src="gallery-5.jpg" alt="Gallery Image 5" class="gallery-photo-thumb" />
+        </div>
+        <div class="gallery-item" onclick="openLightbox(5)">
+          <img src="gallery-7.jpg" alt="Gallery Image 6" class="gallery-photo-thumb" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section 6: Account (축의금) -->
+    <section class="section-account">
+      <div class="section-header">
+        <p class="section-label-en">Gift</p>
+        <h2 class="section-title-kr lang-ko">마음 전하기</h2>
+        <div class="title-line"></div>
+      </div>
+      <p class="account-desc lang-ko">
+        멀리서나마 축하의 마음을 전해주시고자 하는 분들을 위해<br />조심스레 계좌번호를 남깁니다.<br />
+        따뜻한 마음으로 축복해 주셔서 감사합니다.<br />
+        <span style="display:inline-block; margin-top:8px; font-size:0.85rem; color:var(--pink-deep); font-weight:500;">벤모로 들어오는 돈의 일부는<br />유방암과 소아암 재단에 기부할 예정입니다.</span>
+      </p>
+      <p class="account-desc lang-en">
+        For those who wish to send a gift, we have provided our Venmo link below.<br />
+        <span style="display:inline-block; margin-top:8px; font-size:0.85rem; color:var(--pink-deep); font-weight:500;">A portion of these funds will be donated to breast cancer and pediatric cancer foundations.</span>
+      </p>
+      
+      <!-- Korean Version: Bank Accounts + Venmo -->
+      <div class="account-cards lang-ko">
+        <div class="account-card">
+          <div class="account-side lang-ko">신랑측</div>
+          <div class="account-detail" style="display:flex; align-items:center;">
+             <div class="account-num" style="font-size:1.1rem; color:var(--brown); flex:1; margin:0;"><span class="lang-ko">김종민</span></div>
+          </div>
+          <button class="submit-btn" style="background:#008CFF; padding:10px 20px; width:auto; margin:0; box-shadow:none;" onclick="window.open('https://venmo.com/JK1990', '_blank')">
+            Venmo
+          </button>
+        </div>
+        <div class="account-card bride-card">
+          <div class="account-side bride-side lang-ko">신부측</div>
+          <div class="account-detail">
+            <div class="bank-name"><span class="lang-ko">신한은행</span></div>
+            <div class="account-num" id="brideAccount">987-654-3210987</div>
+            <div class="account-holder"><span class="lang-ko">예금주: 신예지</span></div>
+          </div>
+          <div class="account-actions" style="display: flex; flex-direction: column; gap: 6px; flex-shrink: 0;">
+            <button class="copy-btn" style="justify-content:center;" onclick="copyAccount('987-654-3210987', this)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+              </svg>
+              <span class="lang-ko">복사</span>
+            </button>
+            <button class="copy-btn" style="background:#008CFF; color:white; border:none; justify-content:center;" onclick="window.open('https://venmo.com/Jjay-shin', '_blank')">
+              Venmo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- English Version: Venmo Only -->
+      <div class="account-cards lang-en" style="gap:12px;">
+        <div class="account-card">
+          <div class="account-side lang-en" style="writing-mode:horizontal-tb; padding-right:0; border-right:none; font-size:0.85rem;">Groom</div>
+          <div class="account-detail" style="display:flex; align-items:center;">
+             <div class="account-num" style="font-size:1.1rem; color:var(--brown); flex:1; margin:0;">Jongmin Kim</div>
+          </div>
+          <button class="submit-btn" style="background:#008CFF; padding:10px 20px; width:auto; margin:0; box-shadow:none;" onclick="window.open('https://venmo.com/JK1990', '_blank')">
+            Venmo
+          </button>
+        </div>
+        <div class="account-card bride-card">
+          <div class="account-side bride-side lang-en" style="writing-mode:horizontal-tb; padding-right:0; border-right:none; font-size:0.85rem;">Bride</div>
+          <div class="account-detail" style="display:flex; align-items:center;">
+             <div class="account-num" style="font-size:1.1rem; color:var(--brown); flex:1; margin:0;">Yeaji Shin</div>
+          </div>
+          <button class="submit-btn" style="background:#008CFF; padding:10px 20px; width:auto; margin:0; box-shadow:none;" onclick="window.open('https://venmo.com/Jjay-shin', '_blank')">
+            Venmo
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="card-footer">
+
+      <p class="footer-names"><span class="lang-ko">김종민 · 신예지</span><span class="lang-en">Jongmin · Yeaji</span></p>
+      <p class="footer-date">2026. 06. 17</p>
+      <p class="footer-quote">"May our sunshine carry even the clouds"</p>
+      <div class="share-section">
+        <p class="share-label"><span class="lang-ko">공유하기</span><span class="lang-en">Share</span></p>
+        <div class="share-btns">
+          <button class="share-btn url-share" onclick="copyUrl()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
+            </svg>
+            <span class="lang-ko">링크 복사하기</span><span class="lang-en">Copy Link</span>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Lightbox Overlay -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox-prev" onclick="changeLightboxImage(-1)">❮</button>
+    <img id="lightboxImg" src="" alt="Enlarged gallery image" />
+    <button class="lightbox-next" onclick="changeLightboxImage(1)">❯</button>
+    <div class="lightbox-counter" id="lightboxCounter">1 / 2</div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js?v=6"></script>
+</body>
+</html>
