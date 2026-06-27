@@ -187,3 +187,11 @@ function setLang(lang) {
     document.getElementById('btnEn').classList.remove('active');
   }
 }
+
+// ── Check URL parameters for language
+document.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('lang') === 'en') {
+    setLang('en');
+  }
+});
