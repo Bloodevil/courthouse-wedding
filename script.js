@@ -100,13 +100,52 @@ document.querySelectorAll('section, .account-card, .transport-item, .message-ite
 
 // ── Lightbox for Gallery
 var galleryImages = [
-  'gallery-1.jpg',
-  'gallery-2.jpg',
+  'gallery-11.jpg',
+  'gallery-10.jpg',
   'gallery-3.jpg',
   'gallery-4.jpg',
   'gallery-5.jpg',
-  'gallery-7.jpg'
+  'gallery-6.jpg',
+  'gallery-1.jpg',
+  'gallery-2.jpg',
+  'gallery-7.jpg',
+  'gallery-8.jpg',
+  'gallery-9.jpg'
 ];
+
+function renderGallery() {
+  const grid = document.getElementById('galleryGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  
+  const displayCount = Math.min(galleryImages.length, 9);
+  
+  for (let i = 0; i < displayCount; i++) {
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    item.onclick = () => openLightbox(i);
+    
+    const img = document.createElement('img');
+    img.src = galleryImages[i];
+    img.alt = 'Gallery Image ' + (i + 1);
+    img.className = 'gallery-photo-thumb';
+    item.appendChild(img);
+    
+    if (i === 8 && galleryImages.length > 9) {
+      const overlay = document.createElement('div');
+      overlay.className = 'more-photos-overlay';
+      overlay.textContent = '+' + (galleryImages.length - 9);
+      item.appendChild(overlay);
+    }
+    
+    grid.appendChild(item);
+    
+    item.classList.add('fade-in-up');
+    observer.observe(item);
+  }
+}
+
+renderGallery();
 var currentLightboxIndex = 0;
 
 function openLightbox(index) {

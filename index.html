@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=8" />
+  <link rel="stylesheet" href="style.css?v=9" />
 </head>
 <body>
   <!-- Language Toggle -->
@@ -29,9 +29,9 @@
           <div class="hero-overlay-bottom">
             <p class="hero-label">Wedding Invitation</p>
             <div class="hero-names-kr">
-              <span class="lang-ko">김종민</span><span class="lang-en">Jongmin</span>
-              <span class="heart-divider">♡</span>
               <span class="lang-ko">신예지</span><span class="lang-en">Yeaji</span>
+              <span class="heart-divider">♡</span>
+              <span class="lang-ko">김종민</span><span class="lang-en">Jongmin</span>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
         <div class="family-group">
           <div class="family-row">
             <span class="family-role lang-ko">신랑 측</span><span class="family-role lang-en">Groom</span>
-            <span class="family-names lang-ko">김태호 · 박미영의 장남</span><span class="family-names lang-en">Son of Taeho Kim & Miyoung Park</span>
+            <span class="family-names lang-ko">최우혁 · 이숙희의 장남</span><span class="family-names lang-en">Son of Woohyuk Choi & Sookhee Lee</span>
             <span class="family-name-main lang-ko">김종민</span><span class="family-name-main lang-en">Jongmin Kim</span>
           </div>
         </div>
@@ -115,25 +115,8 @@
         <h2 class="section-title-kr lang-ko">우리의 이야기</h2>
         <div class="title-line"></div>
       </div>
-      <div class="gallery-grid-new">
-        <div class="gallery-item" onclick="openLightbox(0)">
-          <img src="gallery-1.jpg" alt="Gallery Image 1" class="gallery-photo-thumb" />
-        </div>
-        <div class="gallery-item" onclick="openLightbox(1)">
-          <img src="gallery-2.jpg" alt="Gallery Image 2" class="gallery-photo-thumb" />
-        </div>
-        <div class="gallery-item" onclick="openLightbox(2)">
-          <img src="gallery-3.jpg" alt="Gallery Image 3" class="gallery-photo-thumb" />
-        </div>
-        <div class="gallery-item" onclick="openLightbox(3)">
-          <img src="gallery-4.jpg" alt="Gallery Image 4" class="gallery-photo-thumb" />
-        </div>
-        <div class="gallery-item" onclick="openLightbox(4)">
-          <img src="gallery-5.jpg" alt="Gallery Image 5" class="gallery-photo-thumb" />
-        </div>
-        <div class="gallery-item" onclick="openLightbox(5)">
-          <img src="gallery-7.jpg" alt="Gallery Image 6" class="gallery-photo-thumb" />
-        </div>
+      <div class="gallery-grid-new" id="galleryGrid">
+        <!-- Gallery items will be injected here by script.js -->
       </div>
     </section>
 
@@ -217,7 +200,7 @@
     <!-- Footer -->
     <footer class="card-footer">
 
-      <p class="footer-names"><span class="lang-ko">김종민 · 신예지</span><span class="lang-en">Jongmin · Yeaji</span></p>
+      <p class="footer-names"><span class="lang-ko">신예지 · 김종민</span><span class="lang-en">Yeaji · Jongmin</span></p>
       <p class="footer-date">2026. 06. 17</p>
       <p class="footer-quote">"May our sunshine carry even the clouds"</p>
       <div class="share-section">
@@ -247,6 +230,6 @@
   <!-- Toast Notification -->
   <div class="toast" id="toast"></div>
 
-  <script src="script.js?v=7"></script>
+  <script src="script.js?v=11"></script>
 </body>
 </html>
