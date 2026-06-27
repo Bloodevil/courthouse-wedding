@@ -92,7 +92,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 
-document.querySelectorAll('section, .account-card, .transport-item, .message-item')
+document.querySelectorAll('section, .account-card, .transport-item, .message-item, .gallery-item')
   .forEach(el => {
     el.classList.add('fade-in-up');
     observer.observe(el);
